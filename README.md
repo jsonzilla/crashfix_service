@@ -25,20 +25,15 @@ Prerequisites:
 ### Building in Linux Ubuntu:
 ```bash
 sudo apt-get install mc codeblocks mercurial cmake build-essential libssl-dev rpm
+cmake .
+cmake build .
 make dumper
-cd dumper
-cmake clear .
-cmake -G "CodeBlocks - Unix Makefiles" .
-cmake -DCMAKE_BUILD_TYPE=Debug ./Debug
-cmake -DCMAKE_BUILD_TYPE=Release ./Release
-make clean
-make [-VERBOSE=""]
 sudo make install
 ```
 
 ## Building packages:
 ```bash
-cpack .
+sudo cpack .
 ```
 
 ## Troubleshooting:
